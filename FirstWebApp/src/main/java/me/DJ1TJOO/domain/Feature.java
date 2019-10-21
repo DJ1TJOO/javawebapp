@@ -9,10 +9,10 @@ import javax.persistence.Id;
 @Entity
 public class Feature {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)//auto increment
 	private Long id;
 	private String title, description, status;
 	
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)//auto increment
 	public Long getId() {
 		return id;
 	}

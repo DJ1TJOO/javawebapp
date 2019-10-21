@@ -10,10 +10,10 @@ import javax.persistence.Table;
 @Table(name="users")
 public class User {
 	
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)//auto increment
 	private Long id;
 	private String username, password, name;
 	
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)//auto increment
 	public Long getId() {
 		return id;
 	}
